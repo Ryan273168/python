@@ -1,14 +1,14 @@
 import turtle
 
-turtle.pensize(5)
-turtle.pencolor("black")
-turtle.fillcolor("orange")
-turtle.begin_fill()
-for i in range(5):
-    turtle.forward(200)
-    turtle.right(144)
-turtle.end_fill()
-turtle.done()
+# turtle.pensize(5)
+# turtle.pencolor("yellow")
+# turtle.fillcolor("yellow")
+# turtle.begin_fill()
+# for i in range(5):
+#     turtle.forward(200)
+#     turtle.right(144)
+# turtle.end_fill()
+# turtle.done()
 # turtle.color("blue")
 # turtle.shape("turtle")
 
@@ -33,3 +33,15 @@ turtle.done()
 # turtle.done()
 # for i in range(2,10,2):
 #     print(i)
+score = float(input("Plese input score: "))
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "E"
+print("Your grade is", grade)
