@@ -22,6 +22,7 @@ import turtle
 # for i in range(4):
 # turtle.forward(100)
 # turtle.right(90)
+
 # turtle.forward(100)
 # turtle.right(90)
 # turtle.forward(100)
@@ -31,17 +32,25 @@ import turtle
 # turtle.forward(100)
 # turtle.right(90)
 # turtle.done()
+
 # for i in range(2,10,2):
 #     print(i)
-score = float(input("Plese input score: "))
-if score >= 90:
-    grade = "A"
-elif score >= 80:
-    grade = "B"
-elif score >= 70:
-    grade = "C"
-elif score >= 60:
-    grade = "D"
+
+# score = float(input("Plese input score: "))
+# if score >= 90:
+#     grade = "A"
+# elif score >= 80:
+#     grade = "B"
+# elif score >= 70:
+#     grade = "C"
+# elif score >= 60:
+#     grade = "D"
+# else:
+#     grade = "E"
+# print("Your grade is", grade)
+
+number = int(input("請输入一个数字:"))
+if (number % 2) == 0:
+    print("偶數")
 else:
-    grade = "E"
-print("Your grade is", grade)
+    print("奇数")
