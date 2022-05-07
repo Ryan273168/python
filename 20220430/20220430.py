@@ -21,15 +21,31 @@
 # else:
 #     print("正常結束")
 
-while True:
-    num = (input("請输入果汁編號:"))
-    if num == "1":
-        print("你的商品是:蘋果汁")
-    elif num == "2":
-        print("你的商品是:柳橙汁")
-    elif num == "3":
-        print("你的商品是:葡萄汁")
-    elif num == "4":
-        break
-    else:
-        print("!!!輸入錯誤查無此果汁!!!")
+# while True:
+#     num = (input("請输入果汁編號:"))
+#     if num == "1":
+#         print("你的商品是:蘋果汁")
+#     elif num == "2":
+#         print("你的商品是:柳橙汁")
+#     elif num == "3":
+#         print("你的商品是:葡萄汁")
+#     elif num == "4":
+#         break
+#     else:
+#         print("!!!輸入錯誤查無此果汁!!!")
+
+import turtle
+
+turtle.penup()
+for i in range(10, 30, 1):
+    turtle.left(90)
+    turtle.stamp()
+    turtle.right(90)
+    turtle.forward(70)
+    turtle.right(30)
+turtle.home()
+turtle.right(90)
+turtle.forward(130)
+turtle.left(90)
+turtle.forward(50)
+turtle.done()

@@ -1,4 +1,4 @@
-import turtle
+# import turtle
 
 # turtle.pensize(5)
 # turtle.pencolor("yellow")
@@ -18,10 +18,10 @@ import turtle
 #     turtle.forward(step)
 #     turtle.right(25)
 #     print(step)
-#turtle.done()
+# turtle.done()
 # for i in range(4):
-# turtle.forward(100)
-# turtle.right(90)
+#     turtle.forward(100)
+#     turtle.right(90)
 
 # turtle.forward(100)
 # turtle.right(90)
@@ -49,8 +49,8 @@ import turtle
 #     grade = "E"
 # print("Your grade is", grade)
 
-number = int(input("請输入一个数字:"))
-if (number % 2) == 0:
-    print("偶數")
-else:
-    print("奇数")
+# number = int(input("請输入一个数字:"))
+# if (number % 2) == 0:
+#     print("偶數")
+# else:
+#     print("奇数")

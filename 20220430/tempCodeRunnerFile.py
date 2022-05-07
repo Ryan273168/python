@@ -1,0 +1,1 @@
+turtle.right(30)
