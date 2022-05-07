@@ -1,1 +1,1 @@
-turtle.right(30)
+for j in range(12):
