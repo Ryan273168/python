@@ -25,9 +25,3 @@ import random
 max = int(input("請輸入最大值"))
 min = int(input("請輸入最小值"))
 x = int(input("請輸入要跳過的數的倍數"))
-while True:
-    if min / x < 0:
-        print(min)
-        min += 1
-        if min == max:
-            break
