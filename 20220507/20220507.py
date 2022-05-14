@@ -3,7 +3,7 @@
 # ans = random.randint(1, 100)
 # max = 100
 # min = 0
-# print(ans)
+# # print(ans)
 # while True:
 #     x = int(input("請輸入一個數字"))
 #     if x == ans:
@@ -17,4 +17,17 @@
 #             min = x
 #         print("在大一點{}~{}之間".format(min, max))
 # print("猜對了")
-print([1, 2] * 2)
+
+# print([1, 2] * 2)
+
+import random
+
+max = int(input("請輸入最大值"))
+min = int(input("請輸入最小值"))
+x = int(input("請輸入要跳過的數的倍數"))
+while True:
+    if min / x < 0:
+        print(min)
+        min += 1
+        if min == max:
+            break
