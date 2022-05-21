@@ -56,11 +56,41 @@
 # index = i.index('a')
 # print(index)
 
-from ast import Delete
+# from ast import Delete
+
+# i = []
+# while True:
+#     print("1.想加入菜單的果汁2.想刪除的果汁3.顯示出目前所有果汁4.完成菜單5.離開系統")
+#     num = (input("請输入功能選項:"))
+#     if num == "1":
+#         menu = (input("請輸入想加入菜單的果汁:"))
+#         if i.count(menu) > 0:
+#             print("此果汁已列入清單中")
+#         else:
+#             i.append(menu)
+#     elif num == "2":
+#         print(i)
+#         delete = (input("請輸入想刪除的果汁:"))
+#         if i.count(delete) > 0:
+#             i.remove(delete)
+#         else:
+#             print("菜單中無此果汁")
+#     elif num == "3":
+#         print(i)
+#     elif num == "4":
+#         if len(i) > 0:
+#             print("已確認菜單")
+#             print("您的訂單是:{}".format(i))
+#         else:
+#             print("請重新輸入果汁")
+#     elif num == "5":
+#         break
+#     else:
+#         print("請重新輸入編號")
 
 i = []
 while True:
-    print("1.想加入菜單的果汁2.想刪除的果汁3.顯示出目前所有果汁4.完成菜單5.離開系統")
+    print("1.想加入菜單的果汁2.顯示出目前所有果汁3.離開系統")
     num = (input("請输入功能選項:"))
     if num == "1":
         menu = (input("請輸入想加入菜單的果汁:"))
@@ -70,20 +100,7 @@ while True:
             i.append(menu)
     elif num == "2":
         print(i)
-        delete = (input("請輸入想刪除的果汁:"))
-        if i.count(delete) > 0:
-            i.remove(delete)
-        else:
-            print("菜單中無此果汁")
     elif num == "3":
-        print(i)
-    elif num == "4":
-        if len(i) > 0:
-            print("已確認菜單")
-            print("您的訂單是:{}".format(i))
-        else:
-            print("請重新輸入果汁")
-    elif num == "5":
         break
     else:
         print("請重新輸入編號")
