@@ -29,19 +29,24 @@
 # print('comp result = {}'.format(comp))
 # who_is_winner(user, comp)
 
-i = []
-while True:
-    print("1.想加入菜單的果汁2.顯示出目前所有果汁3.離開系統")
-    num = (input("請输入功能選項:"))
-    if num == "1":
-        menu = (input("請輸入想加入菜單的果汁:"))
-        if i.count(menu) > 0:
-            print("此果汁已列入清單中")
-        else:
-            i.append(menu)
-    elif num == "2":
-        print(i)
-    elif num == "3":
-        break
-    else:
-        print("請重新輸入編號")
+# def add_juce(a_list):
+#     y = (input("請輸入想加入菜單的果汁:"))
+#     if a_list.count(y) > 0:
+#         print("此果汁已列入清單中")
+#     else:
+#         a_list.append(y)
+#     return a_list
+
+# def show_juice(a_list):
+#     print(a_list)
+
+# i = []
+# while True:
+#     print("1.想加入菜單的果汁2.顯示出目前所有果汁3.離開系統")
+#     num = (input("請输入功能選項:"))
+#     if num == "1":
+#         i = add_juce(i)
+#     elif num == "2":
+#         show_juice(i)
+#     elif num == "3":
+#         break
