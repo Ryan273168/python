@@ -14,7 +14,7 @@ import time
 
 
 def update_life(s):
-    HP = random.randint(1, 3)
+    HP = random.randint(0, 1)
     print('角色獲得{}點HP'.format(HP))
     s[1] += HP
 
@@ -26,11 +26,44 @@ def update_money(s):
 
 
 def fighting(s):
-    m_life = random.randint
-    m_atk = random.randint
+    t = 0.5
+    m_HP = random.randint(2, 10)
+    print('monster life{}'.format(m_HP))
+
+    while True:
+        attack = random.randint(1, 3)
+        print('You make damage'.format(attack))
+        m_HP -= attack
+        time.sleep(t)
+        print('monster life{}'.format(m_HP))
+
+        if (m_HP < 1):
+            print('You beat monster')
+            s[2] += random.randint(10, 20)
+            break
+        else:
+            print('monster attack')
+            s[1] -= 1
+            time.sleep(t)
+            print('you hurt, life = {}'.format(s[1]))
+            if (s[1] < 1):
+                print('you dead')
+                s[0] = 0
+                break
 
 
-status = [1, 10, 0]
+file = 'save.txt'
+status = []
+try:
+    f = open(file, 'r')
+except:
+    status = [1, 10, 0]
+else:
+    for line in f:
+        status.append(int(line))
+    f.close()
+
+print('角色目前狀態:HP = {},;Money = {}'.format(status[1], status[2]))
 event = [update_life, update_money, fighting]
 
 while True:
@@ -38,6 +71,22 @@ while True:
     if (ans == 'y'):
         event[random.randrange(0, len(event))](status)
         print('角色目前狀態:HP = {},;Money = {}'.format(status[1], status[2]))
+        if status[0] == 0:
+            print('gameover')
+            if status[2] >= 50:
+                ans = input('是否購買生命藥水?')
+                if ans == 'n':
+                    status[0] = 1
+                    status[1] = 10
+                    status[2] = 50
+                    for i in range(10):
+                        print('復活進度:' + str(i * 10) + '%', end='\r')
+                        time.sleep(0.5)
     else:
         print('遜!')
+        file = 'save.txt'
+        f = open(file, 'w')
+        for i in status:
+            f.write(str(i) + '\n')
+        f.close()
         break
