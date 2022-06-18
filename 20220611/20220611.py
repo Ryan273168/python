@@ -26,7 +26,7 @@ def update_money(s):
 
 
 def fighting(s):
-    m_life = random.randintcvbn
+    m_life = random.randint
     m_atk = random.randint
 
 
