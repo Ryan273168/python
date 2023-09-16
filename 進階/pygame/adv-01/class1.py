@@ -9,12 +9,12 @@ width = 640
 height = 320
 
 ######################建立視窗及物件######################
-screen = pygame.display.set_mode((width, height))
+screen = pygame.display.set_mode((width, height))  # 建立繪圖視窗
 pygame.display.set_caption("...")
 
 ######################建立畫布######################
 bg = pygame.Surface((width, height))
-bg.fill((255, 255, 255))
+bg.fill((255, 255, 255))  # 底色為白色
 
 #圓形(畫布,顏色,圓心,半徑,線寬)
 # pygame.draw.circle(bg, (0, 0, 225), (200, 100), 30, 0)
